@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+ng-scrollbar.custom-scrollbar {
+  --scrollbar-thickness: 6;
+  --scrollbar-thumb-color: #9e9e9e;
+  --scrollbar-border-radius: 50rem;
+  --scrollbar-hover-thickness: 12;
+  --scrollbar-thumb-hover-color: #616161;
+
+  .ng-scrollbar-track {
+    border-radius: 0;
+
+    &:has(.ng-scrollbar-thumb:active) {
+      --scrollbar-track-color: #e0e0e0;
+    }
+
+    &:hover {
+      --scrollbar-track-color: #e0e0e0;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 16px;
+}
